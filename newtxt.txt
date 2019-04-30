@@ -1,0 +1,41 @@
+import os
+
+
+
+file_path = 'housing.data'
+
+
+
+if os.path.isfile(file_path):
+
+    print('I have a valid file!!!')
+
+else:
+
+    print('Invalid file, I\'ll crash')
+
+
+
+file = open('housing.data')
+
+
+
+corrected_file = []
+
+for line in file.readlines():
+
+    clean_line = line.replace('  ', ' ').replace('  ', ' ').strip()
+
+    line_values = clean_line.split(' ')
+
+    corrected_line = []
+
+    print(line_values)
+
+    for value in line_values:
+
+        pass
+
+  print(corrected_line)
+
+print(corrected_file)
